@@ -110,7 +110,7 @@ class CaffeScaleLayer(CaffeLayerGenerator):
 
 class CaffeReluLayer(CaffeLayerGenerator):
     def __init__(self, name, negslope=None):
-        super(CaffeReluLayer, self).__init__(name, 'Relu')
+        super(CaffeReluLayer, self).__init__(name, 'ReLU')
         self.negslope = negslope
     def write(self, f):
         param_str = ""
